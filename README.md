@@ -1,1 +1,1 @@
-# LetsUpgradeJavascript
+# LetsUpgradeJavascript Day 2
