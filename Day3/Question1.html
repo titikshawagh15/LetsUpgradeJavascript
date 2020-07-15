@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8"/>
+    <title>Question 1</title>
+    <h2>Explore and explain the various methods in console function:</h2>
+
+    <h4>
+        1. console.log(): Used to log/print the output to the console. We can put any type inside the log() ie. string, array,object, etc.
+        Example:
+    </h4>
+    Eg.-console.log('abc')<br>
+        console.log(true)
+    <h4>
+        2. console.error(): Used to log error message to console. Used in testing of code. Uses red color.
+    </h4>
+    Eg.-console.error('This is console error')
+    <h4>
+        3. console.warn(): Used to give warning message to console. Uses yellow color. 
+    </h4>
+    Eg.-console.warn('This is warning')
+    <h4>
+        4. console.count(): Used to count number that the function hit by this counting method.
+    </h4>
+    Eg.-for(let i=0;i<4;i++)<br>
+    {<br>
+        console.count(i);<br>
+    }
+    
+    <h4>
+        5. console.group() and console.groupEnd(): Used to group contents in a separate block, which will be indented.
+    </h4>
+    Eg.-console.group('simple') <br>
+            console.warn('WARNING') <br>
+            console.error('ERROR')<br>
+        console.groupEnd('simple')
+</head>
+<body>
+<script>
+    console.log('abc')
+    console.log(true)
+
+    console.error('This is console error')
+
+    console.warn('This is warning')
+    
+    for(let i=0;i<4;i++){
+        console.count(i);
+    }
+
+    console.group('simple')
+            console.warn('WARNING')
+            console.error('ERROR')
+        console.groupEnd('simple')
+</script>
+</body>
+</html>

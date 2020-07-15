@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8"/>
+    <title>Question 2</title>
+    <h2>
+        Write difference between var, let and const with code examples.
+    </h2>
+    <h4>
+        var: var is used to declare a variable and, also to initialize value to it.
+    </h4>
+        Eg- var a = 10
+    <h4>
+        let: let declares a local variable in a specific block.
+    </h4>
+        Eg- let b = 20
+    <h4>
+        const: const is used to assign a constant/fixed value. It cannot be changed again. Scope only inside the block.
+    </h4>
+        Eg- const c = 30
+</head>
+<body>
+<script>
+    
+    var a = 10
+    console.log(a)  //output 10
+    
+    function abc()
+    {
+        let b=20
+        console.log(b)  //output 20
+    }
+    window.abc()
+    function xyz()
+    {
+        const c=30
+        console.log(c)  //output 30
+    }
+    window.xyz()
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8"/>
+    <title>Question 3</title>
+    <h2>Write a brief intro on available datatypes in javascript</h2>
+
+    <h4>
+        <u>Number:</u><br>
+        The number type represents both integer and floating point numbers. Operations like multiplication,division,addition,subtraction,etc can be performed on numbers.
+        <br> Eg- let n=123;<br>
+            n=12.345;<br>
+    </h4>
+    <h4>
+        <u>BigInt:</u><br>
+        BigInt type was recently added to the language to represent integers of arbitrary lenth.
+        A bigInt value is created by appending 'n' to end of an integer.
+        <br> Eg- const bigInt=124262423273264263551172n
+    </h4>
+    <h4>
+        <u>String:</u><br>
+        String is used for collection of characters. They must be surrounded by quotes.
+        Double quotes("Hello") and single quotes('Hello') are simple quotes.
+        Backticks(`Hello`) are used for extended functionality.
+        <br> Eg- let str="ABC" <br>
+    </h4>
+    <h4>
+        <u>Boolean:</u><br>
+        The Boolean type has only two values 'true' and 'false'. It stores yes/no values.
+        Boolean values also comes as a result of comparisons.
+        <br> Eg- let a=true
+                 let b=false<br>
+    </h4>
+    <h4>
+        <u>Null:</u><br>
+        This type contains only 'null' value. It represents "nothing","empty" or "value unknown".
+        <br> Eg- let age = null
+    </h4>
+</head>
+<body>
+<script>
+    n=12.345
+    console.log("Number: "+n)
+
+    const bigInt=124262423273264263551172n
+    console.log("BigInt: "+bigInt)
+
+    let str="ABC"
+    console.log("String: "+str)
+
+    let a=true
+    let b=false
+    console.log("Boolean "+a+" and boolean "+b)
+
+    let age = null
+    console.log("Null: "+age)
+
+</script>
+</body>
+</html>
