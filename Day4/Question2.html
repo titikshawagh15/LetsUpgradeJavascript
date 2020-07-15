@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8"/>
+    <title>Question 2</title>
+    <h3>Explain with examples the methods of String and Array.</h3>
+
+    <h2>1.STRING METHODS<h2>
+        
+    <h4><u>String Length</u></h4>
+    Finds out length of the string<br>
+
+    Example<br>
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+    var sln = txt.length;<br>
+
+    <h4><u>indexOf()</u></h4>
+    The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+
+    <br>Example<br>
+    var str = "Please locate where 'locate' occurs!";<br>
+    var pos = str.indexOf("locate");<br>
+    <h4><u>lastIndexOf()</u></h4>
+    The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:<br>
+
+    Example<br>
+    var str = "Please locate where 'locate' occurs!";<br>
+    var pos = str.lastIndexOf("locate");<br>
+    <h4><u>search()</u></h4>
+    The search() method searches a string for a specified value and returns the position of the match:<br>
+
+    Example<br>
+    var str = "Please locate where 'locate' occurs!";<br>
+    var pos = str.search("locate");<br>
+    <h4><u>slice()</u></h4>
+    slice() extracts a part of a string and returns the extracted part in a new string.<br>
+    The method takes 2 parameters: the start position, and the end position (end not included).<br>
+    This example slices out a portion of a string from position 7 to position 12 (13-1):<br>
+
+    Example<br>
+    var str = "Apple, Banana, Kiwi";<br>
+    var res = str.slice(7, 13);<br>
+    Result- Banana<br>
+    <h4><u>replace()</u></h4>
+    The replace() method replaces a specified value with another value in a string:<br>
+
+    Example<br>
+    str = "Please visit Microsoft!";<br>
+    var n = str.replace("Microsoft", "W3Schools");<br>
+    <h4><u>toUpperCase()</u></h4>
+    A string is converted to upper case with toUpperCase():<br>
+
+    Example<br>
+    var text1 = "Hello World!";       // String<br>
+    var text2 = text1.toUpperCase();  // text2 is text1 converted to upper<br>
+    <h4><u>toLowerCase()</u></h4>
+    A string is converted to lower case with toLowerCase():<br>
+
+    Example<br>
+    var text1 = "Hello World!";       // String<br>
+    var text2 = text1.toLowerCase();  // text2 is text1 converted to lower<br>
+
+    <h2>2.ARRAY METHODS<h2></h2>
+
+    <h4><u>Converting Arrays to Strings</u></h4>
+    The JavaScript method toString() converts an array to a string of (comma separated) array values.<br>
+
+    Example<br>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+    document.getElementById("demo").innerHTML = fruits.toString();<br>
+    Result:<br>
+
+    Banana,Orange,Apple,Mango<br>
+    <h4><u>Popping</u></h4>
+    The pop() method removes the last element from an array:<br>
+
+    Example<br>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+    fruits.pop();              // Removes the last element ("Mango") from fruits<br>
+    <h4><u>Pushing</u></h4>
+    The push() method adds a new element to an array (at the end):<br>
+
+    Example<br>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+    fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits<br>
+    <h4><u>Merging (Concatenating) Arrays</u></h4>
+    he concat() method creates a new array by merging (concatenating) existing arrays:<br>
+
+    Example (Merging Two Arrays)<br>
+    var myGirls = ["Cecilie", "Lone"];<br>
+    var myBoys = ["Emil", "Tobias", "Linus"];<br>
+    var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys<br>
+    <h4><u>length</u></h4>
+    The length property provides an easy way to append a new element to an array:<br>
+
+    Example<br>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+    fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruits<br>
+    <h4><u>Deleting Elements</u></h4>
+    Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:<br>
+
+    Example<br>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+    delete fruits[0];           // Changes the first element in fruits to undefined<br>
+</head>
+<body>
+<script>
+</script>
+</body>
+</html>
