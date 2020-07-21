@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignment 2</title>
+</head>
+<body>
+ <script>
+
+    var n1=window.prompt("Enter name: ")
+    var a1=window.prompt("Enter age: ")
+    var e1=window.prompt("Enter email: ")
+    class User
+    {
+        constructor(name,age,email)
+        {
+            this.name=name
+            this.age=age
+            this.email=email
+        }
+        login()
+        {
+            document.write(this.name +" logged in!")
+        }
+        logout()
+        {
+            document.write(this.name +" logged out!")
+        }
+    }
+    let one=new User(n1,a1,e1)
+    var a=window.prompt("Do you want to login or logout?")
+    if(a=='login')
+    {
+        one.login()
+    }
+    if(a=='logout')
+    {
+        one.logout()
+    }
+
+    class Moderator extends User
+    {
+        Moderator()
+        {
+            var arr
+        }
+        addcoins(coin)
+        {      
+            arr.push(coin)
+        }
+        removecoins(popcoin)
+        {
+            arr.remove(popcoin)
+        }
+    } 
+    let mod=new Moderator()
+
+    var num=window.prompt("Enter number of coins: ")
+    while(num!=0)
+    {
+        mod.addcoins(window.prompt("Enter Coin: "))
+        num--
+    }
+    pc=window.prompt("Remove coin:")
+    mod.removecoins(pc)
+
+    
+ </script>
+</body>
+</html>
