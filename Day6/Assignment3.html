@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
+    <button id="theme-toggle">Switch to dark mode</button><br><br>
+<script type="text/javascript">
+
+
+
+function my_Clock() 
+  {
+  this.cur_date = new Date();
+  this.hours = this.cur_date.getHours();
+  this.minutes = this.cur_date.getMinutes();
+  this.seconds = this.cur_date.getSeconds();
+  }
+my_Clock.prototype.run = function ()
+  {
+  setInterval(this.update.bind(this), 1000);
+  };
+my_Clock.prototype.update = function () 
+  {
+  this.updateTime(1);
+  console.log(this.hours + ":" + this.minutes + ":" + this.seconds);
+  };
+my_Clock.prototype.updateTime = function (secs) 
+  {
+  this.seconds+= secs;
+ if (this.seconds >= 60)
+  {
+  this.minutes++;
+  this.seconds= 0;
+  }
+ if (this.minutes >= 60)
+  {
+  this.hours++;
+  this.minutes=0;
+  }
+if (this.hours >= 24)
+  {
+  this.hours = 0;
+  }
+};
+var clock = new my_Clock();
+  clock.run();
+
+    var name=window.prompt("Enter your name: ")
+    document.write("Welcome "+name+" !!")
+
+    button.addEventListener('click', () => 
+    {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    }
+    );
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+}
+localStorage.setItem('theme', 'dark-theme.css');
+
+    
+</script>
+</head>
+<body>
+    <button id="theme-toggle">Switch to dark mode</button>
+</body>
+</html>
